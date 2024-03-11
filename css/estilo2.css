@@ -165,25 +165,27 @@ a{
 
 
 .container {
-    display: grid;
-    margin-bottom: 20px;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    /* display: flex; */
+    margin-bottom: 30px;
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 50px;
     margin: 20px;
-    background-color: rgb(245, 181, 103);
+    background-color: rgb(241, 173, 145);
 }
 
 .container > div {
-    padding: 20px;
+    padding: 50px;
     border: 1px solid #ccccccc2;
     border-radius: 5px;
-    background-color: rgb(85, 166, 204);
     align-items: center;
 } 
 
 .texto {
-    /* text-align: left; /*define o alinhamento do texto.*/
-    background-color: blueviolet;
+    text-align: left;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #45a049;
+    border-radius: 5px;
 
 }
 
@@ -194,7 +196,7 @@ a{
 }
 
 .texto p{
-    color: rgb(77, 75, 75);
+    color: rgb(247, 240, 240);
     font-size: 1.2rem;
     padding-top: 10px ;
     font-style: italic;
@@ -202,21 +204,36 @@ a{
 }
 
 .texto h3{
-    color: #4CAF50;
+    color: #125f15;
     font-size: 1.4rem;
     padding-top: 100px ;
     align-items: left;
     font-weight: bold;
 }
 
+#imagem{
+    width: 30%;
+    height: auto;
+    float: right;
+    display: grid;
+    margin-top: -180px;
+}
 
 #imagem img{
-    float: right; /*joga o item À direita */
+    width: 30%; /* Garante que a imagem ocupe toda a largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+     /* Espaço superior entre o texto e a imagem */
+    float: right;
+     
+}
+    /* align-items:end;
+    float: right; joga o item À direita 
     border-radius: 30px 30px 30px 30px;
     width: 20%;
     height: auto;
     margin-top: 0 auto;
-}
+}  
 
 /* .coluna-direita {
     margin-top: 20px;
