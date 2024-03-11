@@ -213,11 +213,25 @@ a{
 } 
 
 @media(min-width: 280px) and (max-width: 820px){
+    .conteudo{
+        display: block;
+        background-image: none;
+    }
+
+    
+    .conteudo-topo{
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+    
+    
     .imagem-site{
         width: 20%;
         height: auto;
         border-radius: 10px 10px 10px 10px;
         }
+
     .imagem-site img{
         width: 100%;
         height: auto;
